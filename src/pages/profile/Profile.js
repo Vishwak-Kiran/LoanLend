@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Avatar from "../../components/navbar/Avatar";
 import { useAuthContext } from "../../hooks/useAuthContext";
 // import { useSignup } from "../../hooks/useSignup";
@@ -13,7 +14,7 @@ export default function Profile() {
       
         <section className={styles["page-contain"]}>
           {/* <button onClick={check}>Checkout</button> */}
-          <a href ="/form"className={styles["data-card"]}>
+          <Link to ="/form"className={styles["data-card"]}>
             <div className={styles["imgg"]}>
           <Avatar src={user.photoURL} />
             </div>
@@ -37,7 +38,7 @@ export default function Profile() {
                 />
               </svg>
             </span>
-          </a>
+          </Link>
         </section>
 
       
