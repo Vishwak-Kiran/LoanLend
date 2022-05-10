@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { useLogout } from "../../hooks/useLogout";
-import Avatar from "../../components/navbar/Avatar";
 
 // styles
 import styles from "./Navbar.module.css";

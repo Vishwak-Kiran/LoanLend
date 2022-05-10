@@ -9,9 +9,9 @@ export default function Signup() {
   const [displayName, setDisplayName] = useState("");
   const { signup, isPending, error } = useSignup();
   const [thumbnail, setThumbnail] = useState(null);
-  const [aadhaar, setAadhaar] = useState(null);
+  // const [aadhaar, setAadhaar] = useState(null);
   const [thumbnailError, setThumbnailError] = useState(null);
-  const [aadhaarError, setAadhaarError] = useState(null);
+  // const [aadhaarError, setAadhaarError] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,28 +41,26 @@ export default function Signup() {
     console.log("thumbnail updated");
   };
 
-  const handleAadhaarChange = (e) => {
-    setAadhaar(null);
-    let selected = e.target.files[0];
-    console.log(selected);
+  // const handleAadhaarChange = (e) => {
+  //   setAadhaar(null);
+  //   let selected = e.target.files[0];
+  //   console.log(selected);
 
-    if (!selected) {
-      setAadhaarError("Please select a file");
-      return;
-    }
-    if (!selected.type.includes("image")) {
-      setAadhaarError("Selected file must be an image");
-      return;
-    }
-    if (selected.size > 1000000) {
-      setAadhaarError("Image file size must be less than 100kb");
-      return;
-    }
+  //   if (!selected) {
+  //     setAadhaarError("Please select a file");
+  //     return;
+  //   }
+  //   if (!selected.type.includes("image")) {
+  //     setAadhaarError("Selected file must be an image");
+  //     return;
+  //   }
+  //   if (selected.size > 1000000) {
+  //     setAadhaarError("Image file size must be less than 100kb");
+  //     return;
+  //   }
 
-    setAadhaarError(null);
-    setAadhaar(selected);
-    console.log("Aadhaar updated");
-  };
+  //   setAadhaarError(null);
+  //   setAadhaar(selected);
 
   return (
     <form onSubmit={handleSubmit} className={styles["signup-form"]}>
@@ -99,8 +97,8 @@ export default function Signup() {
 
       <label>
         <span>Adhaar Card:</span>
-        <input required type="file" onChange={handleAadhaarChange} />
-        {aadhaarError && <div className="error">{aadhaarError}</div>}
+        <input required type="file"  />
+        {/* {aadhaarError && <div className="error">{aadhaarError}</div>} */}
       </label>
       {!isPending && <button className="btn">sign up</button>}
       {isPending && (

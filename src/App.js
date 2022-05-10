@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import { useAuthContext } from "./hooks/useAuthContext";
 import "./App.css";
@@ -14,7 +14,6 @@ import Create from "./pages/create/Create";
 import Project from "./pages/project/Project";
 import { Routes } from "react-router-dom";
 import Landing from "./pages/dashboard/Dashboard";
-import Request from "./pages/request/Request";
 import { Navigate } from "react-router-dom";
 import Success from "./pages/payment/Success";
 import Dashboard from "./pages/dashboard/Dashboard";
