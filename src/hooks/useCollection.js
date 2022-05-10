@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { fireStore } from "../fireBaeDateBae/config";
 
-import React from "react";
 
 export const useCollection = (collection, _query, _order) => {
   const [documents, setDocuments] = useState(null);

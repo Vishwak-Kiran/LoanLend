@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from "./Pay.module.css"
 
 export default function Success() {
   return (

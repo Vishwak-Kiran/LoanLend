@@ -1,12 +1,9 @@
-import { useState } from "react";
 import Avatar from "../../components/navbar/Avatar";
-import Sidebar from "../../components/navbar/Sidebar";
 import { useAuthContext } from "../../hooks/useAuthContext";
 // import { useSignup } from "../../hooks/useSignup";
 
 import styles from "./Profile.module.css";
 export default function Profile() {
-  const [count,setCount] = useState(true)
   const {user} = useAuthContext()
 
 

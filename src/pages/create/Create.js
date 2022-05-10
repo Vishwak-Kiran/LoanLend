@@ -9,12 +9,12 @@ import { useFirestore } from "../../hooks/useFirestore";
 import { timestamp } from "../../fireBaeDateBae/config";
 import { useNavigate } from "react-router-dom";
 
-const categories = [
-  { value: "development", label: "Development" },
-  { value: "design", label: "Design" },
-  { value: "sales", label: "Sales" },
-  { value: "marketing", label: "Marketing" },
-];
+// const categories = [
+//   { value: "development", label: "Development" },
+//   { value: "design", label: "Design" },
+//   { value: "sales", label: "Sales" },
+//   { value: "marketing", label: "Marketing" },
+// ];
 
 export default function Create() {
   let navigate = useNavigate();
@@ -25,7 +25,7 @@ export default function Create() {
   const [name, setName] = useState("");
   const [details, setDetails] = useState("");
   const [dueDate, setDueDate] = useState("");
-  const [category, setCategory] = useState("");
+  // const [category, setCategory] = useState("");
   const [assignedUsers, setAssignedUsers] = useState([]);
   const [formError, setFormError] = useState(null);
   const [interest, setInterest] = useState("");

@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Avatar from "../../components/navbar/Avatar";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { useFirestore } from "../../hooks/useFirestore";

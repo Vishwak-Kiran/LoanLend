@@ -33,7 +33,7 @@ export default function Pay() {
     // </div>
     <section className={styles["page-contain"]}>
       {/* <button onClick={check}>Checkout</button> */}
-      <a onClick={check} className={styles["data-card"]}>
+      <a href='#' onClick={check} className={styles["data-card"]}>
         <h3>Pay this month</h3>
         <h4>Tenure Left:</h4>
         <p>Amount Left</p>
