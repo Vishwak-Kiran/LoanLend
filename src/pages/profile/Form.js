@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styles from "./Profile.module.css";
 
 
@@ -80,11 +81,7 @@ export default function Form() {
             <input type="file" />
           </label>
         </div>
-        <a
-         href="/profile"
-        >
-          Submit
-        </a>
+        <Link to="/profile">Submit</Link>
       </form>
     </div>
   );
